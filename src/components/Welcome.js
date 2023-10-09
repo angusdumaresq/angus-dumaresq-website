@@ -14,7 +14,7 @@ const Welcome = () => {
   }, []);
 
   return (
-      <div className="welcome">
+      <div className="welcome container">
         <div className="grid-container">
           <div className="grid-item-title-1">
             Angus Dumaresq

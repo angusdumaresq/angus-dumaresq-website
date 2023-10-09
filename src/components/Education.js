@@ -1,16 +1,22 @@
 import '../../src/styles.css'
 import Image from '../components/images/Testamur.jpg'
+import TextAnitmationFunction from './functions/TextAnimationFunction';
 import HighlightFunction from './functions/HighlightFunction'
 import React, { useEffect, useRef } from 'react'
 
 const Education = () => {
+    const fadeInRefs = useRef([]);
     const highlightTextRefs = useRef([]);
 
+    fadeInRefs.current = [useRef(null), useRef(null), useRef(null),];
     highlightTextRefs.current = [useRef(null), useRef(null), useRef(null),];
   
     useEffect(() => {
-    const refs = highlightTextRefs.current
-      HighlightFunction(refs);
+        const fadeRefs = fadeInRefs.current;
+        const highlightRefs = highlightTextRefs.current
+
+        TextAnitmationFunction(fadeRefs)
+        HighlightFunction(highlightRefs)
     }, []);
 
 
@@ -18,9 +24,9 @@ const Education = () => {
         <div className="education">
          <div className='grid-container'>
                 <div className="grid-item-education-title">
-                    <span>Education</span>
+                    <span className="fade-in-animation" ref={fadeInRefs.current[0]}>Education</span>
                 </div>
-                <div className="grid-item-education-text">
+                <div className="grid-item-education-text fade-in-animation" ref={fadeInRefs.current[1]}>
                     <p>
                         <span>
                             I recently completed my studies, earning a&nbsp;
@@ -51,7 +57,7 @@ const Education = () => {
                         </span>
                     </p>
                 </div>
-                <div className="grid-item-image-container">
+                <div className="grid-item-image-container fade-in-animation" ref={fadeInRefs.current[2]}>
                     <img className="image" src={Image} alt="Testamur"></img>
                 </div>
             </div>

@@ -1,15 +1,22 @@
 import '../../src/styles.css'
 import React, { useEffect, useRef } from 'react'
 import TextAnitmationFunction from './functions/TextAnimationFunction';
+import HighlightFunction from './functions/HighlightFunction'
+
 
 const About = () => {
     const fadeInRefs = useRef([]);
+    const highlightTextRefs = useRef([]);
 
     fadeInRefs.current = [useRef(null), useRef(null),];
-
+    highlightTextRefs.current = [useRef(null), useRef(null), useRef(null),];
+  
     useEffect(() => {
-        const refs = fadeInRefs.current
-        TextAnitmationFunction(refs)
+        const fadeRefs = fadeInRefs.current;
+        const highlightRefs = highlightTextRefs.current
+
+        TextAnitmationFunction(fadeRefs)
+        HighlightFunction(highlightRefs)
     }, []);
 
     return (
@@ -28,11 +35,23 @@ const About = () => {
                     Who am I?
                 </div>
                 <div ref={fadeInRefs.current[1]} className="grid-item-about-text fade-in-animation">
-                    My name is Angus Dumaresq, a graduate computer science student ready to embark on my professional career. 
-                    My enthusiasm for creative thinking and problem-solving has fueled my passion for software development. 
-                    Driven by a commitment to excellence, I am a natural communicator and highly punctual, thriving both as a 
-                    team player and as an independent achiever. Please take a moment to explore my website, built using Next.js 
-                    13 and Tailwind, or connect with me on GitHub and LinkedIn using the links in the top right.
+                    <span>
+                        My name is Angus Dumaresq,&nbsp;
+                        <span ref={highlightTextRefs.current[0]}>
+                            a graduate computer science student
+                        </span> 
+                        &nbsp;ready to embark on my professional career. 
+                        My enthusiasm for creative thinking and problem-solving has fueled my passion for software development.&nbsp;
+                        <span ref={highlightTextRefs.current[1]}>
+                            Driven by a commitment to excellence
+                        </span> 
+                        , I am a natural communicator and highly punctual,&nbsp;
+                        <span ref={highlightTextRefs.current[2]}>
+                            thriving both as a team player and as an independent achiever.
+                        </span> 
+                        &nbsp;Please take a moment to explore my website, built using React, 
+                        or connect with me on GitHub and LinkedIn.
+                    </span>
                 </div>
             </div>
         </div>
