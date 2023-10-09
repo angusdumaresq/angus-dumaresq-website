@@ -20,7 +20,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="skills">
+        <div className="skills container">
             <div className="title">
                 Skills
             </div>

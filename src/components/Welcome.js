@@ -14,23 +14,28 @@ const Welcome = () => {
   }, []);
 
   return (
-      <div className="welcome container">
-        <div className="grid-container">
-          <div className="grid-item-title-1">
-            Angus Dumaresq
-          </div>
-          <div className="grid-item-text">
-            <span>
-              <span className="highlight" ref={highlightTextRefs.current[0]}>
-                A web portfolio, showing off some of the finest.
-              </span>
-            </span>
-          </div>
-          <div className="grid-item-image-container">
-                  <img className="image" src={Image} alt="Standing Character"></img>
+    <div className="welcome container">
+      <div className="flex-wrapper">
+        <div className="row">
+          <div className="double-column">
+            <div className="flex-column-text">
+              <p>
+                Angus<br />
+                Dumaresq<br />
+                <span style={{ 'font-size':'20px' }}className="highlight" ref={highlightTextRefs.current[0]}>
+                  A web portfolio, showing off some of the finest.
+                </span>
+              </p>
             </div>
+          </div>
+          <div className="column">
+            <div className="flex-image-container">
+              <img className="image" src={Image} alt="Standing Character"></img>            
+            </div>
+          </div>
         </div>
       </div>
+    </div>
   )
 }
 

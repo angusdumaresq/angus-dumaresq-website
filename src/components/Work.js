@@ -2,7 +2,7 @@ import Image from '../components/images/cyclopCharacter.png'
 
 const Work = () => {
     return (
-        <div className="work">
+        <div className="work container">
             <div className="title">
                 I'm on the search for employment!
             </div>
