@@ -21,54 +21,51 @@ const Education = () => {
 
 
     return (  
-        <div className="education">
-            <div className="education container">
-                <div className="flex-wrapper">
-                    <div className="title">
-                        Education
-                    </div>
-                    <div className="row">
-                        <div className="column">
-                            <div className="flex-column-text">
-                                <p>
-                                    <span>
-                                        I recently completed my studies, earning a&nbsp;
-                                    </span>
-                                    <span ref={highlightTextRefs.current[0]}> 
-                                        bachelor's degree in Computer Science 
-                                    </span>
-                                    <span>
-                                        &nbsp;with majors in&nbsp;
-                                    </span>           
-                                    <span ref={highlightTextRefs.current[1]}> 
-                                        Software Engineering and Cybersecurity from the University of Wollongong. 
-                                    </span> 
-                                    <span>
-                                        &nbsp;My time at university was a transformative journey, both academically and personally. During this period, I forged 
-                                        lifelong friendships, engaged with talented peers and academics, and gained invaluable life lessons 
-                                        that broadened my perspective. <br /><br />
-                                    </span>
-                                    <span>
-                                        My educational background has played a pivotal role in driving my&nbsp; 
-                                    </span>
-                                    <span ref={highlightTextRefs.current[2]}>
-                                        passion for software development.
-                                    </span>
-                                    <span>
-                                        &nbsp;I have developed proficiency in a range of areas including algorithms, data structures, database management, 
-                                        networking, software methodology, version control systems, and cybersecurity principles.
-                                    </span>
-                                </p>
-                            </div>
+        <div className="education container">
+            <div className="flex-wrapper">
+                <div className="row">
+                    <div className="column">
+                        <div className="flex-column-text">
+                            <p>
+                                <h1>Education</h1>
+                                <span>
+                                    I recently completed my studies, earning a&nbsp;
+                                </span>
+                                <span ref={highlightTextRefs.current[0]}> 
+                                    bachelor's degree in Computer Science 
+                                </span>
+                                <span>
+                                    &nbsp;with majors in&nbsp;
+                                </span>           
+                                <span ref={highlightTextRefs.current[1]}> 
+                                    Software Engineering and Cybersecurity from the University of Wollongong. 
+                                </span> 
+                                <span>
+                                    &nbsp;My time at university was a transformative journey, both academically and personally. During this period, I forged 
+                                    lifelong friendships, engaged with talented peers and academics, and gained invaluable life lessons 
+                                    that broadened my perspective. <br /><br />
+                                </span>
+                                <span>
+                                    My educational background has played a pivotal role in driving my&nbsp; 
+                                </span>
+                                <span ref={highlightTextRefs.current[2]}>
+                                    passion for software development.
+                                </span>
+                                <span>
+                                    &nbsp;I have developed proficiency in a range of areas including algorithms, data structures, database management, 
+                                    networking, software methodology, version control systems, and cybersecurity principles.
+                                </span>
+                            </p>
                         </div>
-                        <div className="column">
-                            <div className="flex-image-container">
-                                <img className="image" src={Image} alt="Testumar"></img>            
-                            </div>
+                    </div>
+                    <div className="column">
+                        <div className="flex-image-container">
+                            <img className="image" src={Image} alt="Testumar"></img>            
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

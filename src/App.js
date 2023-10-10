@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Welcome from './components/Welcome';
+import Quote from './components/Quote';
 import About from './components/About';
 import Education from './components/Education';
 import Skills from './components/Skills';
@@ -10,6 +11,7 @@ function App() {
     <div>
       <Header />
       <Welcome />
+      <Quote />
       <About />
       <Education />
       <Skills />

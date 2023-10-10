@@ -1,5 +1,5 @@
 import '../../src/styles.css'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import TextAnitmationFunction from './functions/TextAnimationFunction';
 import HighlightFunction from './functions/HighlightFunction'
 
@@ -19,22 +19,35 @@ const About = () => {
         HighlightFunction(highlightRefs)
     }, []);
 
+
+
+
+
+
+
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+      // Add event listener to check window size and update state
+      const handleResize = () => {
+        setIsSmallScreen(window.innerWidth < 768);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      // Remove event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
     return (
         <div className="about container">
             <div className="flex-wrapper">
                 <div className="row">
                     <div className="double-column">
-                        <div className="flex-column-quote">
-                            Some things<br />
-                            are worth<br />
-                            creating.
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="double-column">
                         <div className="flex-column-text">
-                            <span>
+                            <p>
                                 <h1>Who am I?</h1>
                                 My name is Angus Dumaresq,&nbsp;
                                 <span ref={highlightTextRefs.current[0]}>
@@ -51,10 +64,10 @@ const About = () => {
                                 </span> 
                                 &nbsp;Please take a moment to explore my website, built using React, 
                                 or connect with me on GitHub and LinkedIn.
-                            </span>
+                            </p>
                         </div>
                     </div>
-                    <div className="column"></div>
+                    {!isSmallScreen && <div className="column"></div>}
                 </div>
             </div>
         </div>

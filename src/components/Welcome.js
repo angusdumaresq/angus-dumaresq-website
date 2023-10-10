@@ -22,7 +22,7 @@ const Welcome = () => {
               <p>
                 Angus<br />
                 Dumaresq<br />
-                <span style={{ 'font-size':'20px' }}className="highlight" ref={highlightTextRefs.current[0]}>
+                <span className="highlight" ref={highlightTextRefs.current[0]}>
                   A web portfolio, showing off some of the finest.
                 </span>
               </p>

@@ -16,3 +16,6 @@ code {
     monospace, 'Roboto', sans-serif;;
 }
 
+:root {
+  font-size: calc(15px + 0.390625vw);
+}
