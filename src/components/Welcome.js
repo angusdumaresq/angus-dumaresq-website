@@ -16,22 +16,18 @@ const Welcome = () => {
   return (
     <div className="welcome container">
       <div className="flex-wrapper">
-        <div className="row">
-          <div className="double-column">
-            <div className="flex-column-text">
-              <p>
-                Angus<br />
-                Dumaresq<br />
-                <span className="highlight" ref={highlightTextRefs.current[0]}>
-                  A web portfolio, showing off some of the finest.
-                </span>
-              </p>
-            </div>
+        <div className="grid-template">
+          <div className="flex-column-text">
+            <p>
+              Angus<br />
+              Dumaresq<br />
+              <span className="highlight" ref={highlightTextRefs.current[0]}>
+                A web portfolio, showing off some of the finest.
+              </span>
+            </p>
           </div>
-          <div className="column">
-            <div className="flex-image-container">
-              <img className="image" src={Image} alt="Standing Character"></img>            
-            </div>
+          <div className="flex-image-container">
+            <img className="image" src={Image} alt="Standing Character"></img>            
           </div>
         </div>
       </div>

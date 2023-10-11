@@ -1,15 +1,50 @@
 import '../../src/styles.css'
+import { useState, useEffect } from 'react'
+import githubSVG from '../components/images/githubSVG.svg'
+import linkedInSVG from '../components/images/linkedInSVG.svg'
 
 const Header = () => {
+
+    const [openedLinkedIn, setOpenedLinkedIn] = useState(false)
+    const [openedGitHub, setOpenedGithub] = useState(false)
+
+
+
+    const handleClickLinkedIn = () => {
+      setOpenedLinkedIn(true);
+    }
+
+    const handleClickGitHub = () => {
+      setOpenedGithub(true);
+    }
+
+
+    useEffect(() => {
+      if(openedLinkedIn) {
+        window.open('https://www.linkedin.com/in/angus-dumaresq-512b98233/')
+        setOpenedLinkedIn(false)
+      }
+    }, [openedLinkedIn])
+
+    useEffect(() => {
+      if(openedGitHub) {
+        window.open('https://github.com/angusdumaresq')
+        setOpenedGithub(false)
+      }
+    }, [openedGitHub])
+
     return (
-      <header>
         <div className="header">
-         <ul className="header-items">
-            <li><a href="/">LinkedIn</a></li>
-            <li><a href="/">Github</a></li>
-          </ul>
+          <div className="header-block">
+
+              <button onClick={handleClickLinkedIn} className="buttons">
+                <img src={linkedInSVG} alt="LinkedIn" className="icon" />
+              </button>
+              <button onClick={handleClickGitHub} className="buttons" style={{ "padding-left": "20px" }}>
+                <img src={githubSVG} alt="LinkedIn" className="icon" />
+              </button>
+          </div>
         </div>
-      </header>
     )
 } 
 export default Header;

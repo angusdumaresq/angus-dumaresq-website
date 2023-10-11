@@ -22,25 +22,20 @@ const Quote = () => {
     return (
         <div className="quote container">
             <div className="flex-wrapper">
-                <div className="row">
-                    <div className="column">
-                        <div className="flex-column-quote">
-                            <p>
-                                <span>
-                                    Some things<br />
-                                    are 
-                                </span>
-                                <span style={{ color: "black" }}>{word}</span>
-                                <span>
-                                    worth<br /> 
-                                    creating.
-                                </span>
-                            </p>
-                        </div>
+                <div className="grid-template">
+                    <div className="flex-column-quote">
+                        <p>
+                            <span>
+                                Some things<br />
+                                are 
+                            </span>
+                            <span style={{ color: "#FFA500" }}>{word}</span>
+                            <span>
+                                worth<br /> 
+                                creating.
+                            </span>
+                        </p>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="double-column"></div>
                 </div>
             </div>
         </div>
