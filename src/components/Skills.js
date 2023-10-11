@@ -21,9 +21,9 @@ const Skills = () => {
 
     return (
         <div className="skills container">
-            <div className="title">
+            <h1 style={{"textAlign": 'center'}}>
                 Skills
-            </div>
+            </h1>
             <ul className="flex-container">
                 <li className="flex-item-box fade-in-animation" ref={fadeInRefs.current[0]}>
                     <div className="flex-item-content">
