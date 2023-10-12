@@ -31,7 +31,8 @@ const Skills = () => {
                             <img className="image" src={springSVG} alt="SpringSVG"></img>
                         </div>
                         <h1>Springboot</h1>
-                        <p>With Java being one of my favourite languages, I have excelled in leveraging the power of the 
+                        <p>
+                            With Java being one of my favourite languages, I have excelled in leveraging the power of the 
                             Spring framework with experience in using modules like Spring MVC and Spring Security.
                         </p>
                     </div>
@@ -42,8 +43,11 @@ const Skills = () => {
                             <img className="image" src={reactSVG} alt="SpringSVG"></img>
                         </div>
                         <h1>React</h1>
-                        <p>With Java being one of my favourite languages, I have excelled in leveraging the power of the 
-                            Spring framework with experience in using modules like Spring MVC and Spring Security.
+                        <p>
+                            Having used React to build some of the javascript functions for this site. I understand the idea and 
+                            useOfReactHooks(() =&gt; &#123; <br />
+                                console.log("I Love React") <br />
+                            &#125;)
                         </p>
                     </div>
                 </li>
@@ -52,9 +56,11 @@ const Skills = () => {
                         <div className="image-container">
                             <img className="image" src={versionControlSVG} alt="SpringSVG"></img>
                         </div>
-                        <h1>Version Control</h1>
-                        <p>With Java being one of my favourite languages, I have excelled in leveraging the power of the 
-                            Spring framework with experience in using modules like Spring MVC and Spring Security.
+                        <h1>Git</h1>
+                        <p>
+                            Throughout university and personal projects, I have used the Git version control 
+                            system and Github to share and collaborate with others. I'm also pretty familiar 
+                            with Git Bash too.
                         </p>
                     </div>
                 </li>
@@ -63,9 +69,11 @@ const Skills = () => {
                         <div className="image-container">
                             <img className="image" src={bookSVG} alt="SpringSVG"></img>
                         </div>
-                        <h1>Quick Learner</h1>
-                        <p>With Java being one of my favourite languages, I have excelled in leveraging the power of the 
-                            Spring framework with experience in using modules like Spring MVC and Spring Security.
+                        <h1>Learning</h1>
+                        <p>
+                            I love new and cool things! From new frameworks to new design patterns and even a few 
+                            funny jokes. A SQL query walks into a bar, walks up to two tables and asks, 
+                            "Can I join you?"
                         </p>
                     </div>
                 </li>
@@ -75,8 +83,9 @@ const Skills = () => {
                             <img className="image" src={codingSVG} alt="SpringSVG"></img>
                         </div>
                         <h1>OOP</h1>
-                        <p>With Java being one of my favourite languages, I have excelled in leveraging the power of the 
-                            Spring framework with experience in using modules like Spring MVC and Spring Security.
+                        <p>I have been programming for a while now. And with that, I have developed a solid foundation 
+                            in OOP. This has allowed me to learn new languages and skills without having to relearn 
+                            everything.
                         </p>
                     </div>
                 </li>
@@ -86,8 +95,9 @@ const Skills = () => {
                                 <img className="image" src={fullstackSVG} alt="SpringSVG"></img>
                         </div>
                         <h1>Fullstack</h1>
-                        <p>With Java being one of my favourite languages, I have excelled in leveraging the power of the 
-                            Spring framework with experience in using modules like Spring MVC and Spring Security.
+                        <p>Whilst I'm certainly no expert. I have built CRUD applications that integrate 
+                            frontend apps with back-end apps. These connect to a database and perform 
+                            operations on it from the frontend.
                         </p>
                     </div>
                 </li>
