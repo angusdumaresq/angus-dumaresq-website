@@ -16,8 +16,8 @@ const Work = () => {
             <div className="flex-wrapper">
                 <div className="grid-template">
                     <div className="flex-column-text">
-                        <p>
-                            <h1>Looking for a new developer?</h1>
+                        <div>
+                            <p id="h1">Looking for a new developer?</p>
                             <span>
                                 <span>
                                     Are you looking for a&nbsp; 
@@ -44,7 +44,7 @@ const Work = () => {
                                     or email at angusdq@gmail.com 
                                 </span>
                             </span>
-                        </p>
+                        </div>
                     </div>
                     <div className="flex-image-container">
                         <div className="image">

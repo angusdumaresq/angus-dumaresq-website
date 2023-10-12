@@ -25,8 +25,8 @@ const Education = () => {
             <div className="flex-wrapper">
                 <div className="grid-template">
                     <div className="flex-column-text">
-                        <p>
-                            <h1>Education</h1>
+                        <div>
+                            <p id="h1">Education</p>
                             <span>
                                 I recently completed my studies, earning a&nbsp;
                             </span>
@@ -54,7 +54,7 @@ const Education = () => {
                                 &nbsp;I have developed proficiency in a range of areas including algorithms, data structures, database management, 
                                 networking, software methodology, version control systems, and cybersecurity principles.
                             </span>
-                        </p>
+                        </div>
                     </div>     
                     <div className="flex-image-container">
                         <img className="image" src={Image} alt="Testumar"></img>            

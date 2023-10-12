@@ -24,8 +24,8 @@ const About = () => {
             <div className="flex-wrapper">
                 <div className="grid-template">
                     <div className="flex-column-text">
-                        <p>
-                            <h1>Who am I?</h1>
+                        <div>
+                            <p id="h1">Who am I?</p>
                             <span>
                                 My name is Angus Dumaresq,&nbsp;
                                 <span ref={highlightTextRefs.current[0]}>
@@ -43,7 +43,7 @@ const About = () => {
                                 &nbsp;Please take a moment to explore my website, built using React, 
                                 or connect with me on GitHub and LinkedIn.
                             </span>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
