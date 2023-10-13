@@ -318,7 +318,7 @@
         display: flex;
         overflow: hidden;
         width: 100%;
-        min-height: 7vh;
+        max-height: 7vh;
         padding-right: 10%;
         justify-content: flex-end;
         align-items: center;
@@ -333,16 +333,9 @@
     }
 
     .icon {
-        width: 3em;
-        height: 3em;
+        width: 40px;
+        height: 40px;
         fill: none;
-    }
-
-    @media only screen and (min-width: 1600px) {
-        .icon {
-            width: 4em;
-            height: 4em;
-        }
     }
 }
 
