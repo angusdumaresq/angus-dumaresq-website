@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+    --bg-width: 0%;
+  }
+
+:root {
+    font-size: calc(15px + 0.390625vw);
+}
+
 .welcome {
     .flex-wrapper {
         display: flex; 
@@ -389,7 +398,5 @@ p {
     font-size: 2rem;
 }
 
-:root {
-    font-size: calc(15px + 0.390625vw);
-}
+
   
