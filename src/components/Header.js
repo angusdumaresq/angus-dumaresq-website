@@ -1,4 +1,4 @@
-import './styles.css'
+import '../../src/styles.css'
 import { useState, useEffect } from 'react'
 import githubSVG from '../components/images/githubSVG.svg'
 import linkedInSVG from '../components/images/linkedInSVG.svg'
@@ -7,8 +7,6 @@ const Header = () => {
 
     const [openedLinkedIn, setOpenedLinkedIn] = useState(false)
     const [openedGitHub, setOpenedGithub] = useState(false)
-
-
 
     const handleClickLinkedIn = () => {
       setOpenedLinkedIn(true);

@@ -1,4 +1,4 @@
-import './styles.css'
+import '../../src/styles.css'
 import React, { useEffect, useRef } from 'react'
 import TextAnitmationFunction from './functions/TextAnimationFunction';
 import HighlightFunction from './functions/HighlightFunction'
