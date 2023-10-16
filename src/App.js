@@ -1,3 +1,4 @@
+import './App.css'
 import Header from './components/Header';
 import Welcome from './components/Welcome';
 import Quote from './components/Quote';

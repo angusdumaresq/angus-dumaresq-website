@@ -388,3 +388,8 @@ p {
     margin-bottom: 5px;
     font-size: 2rem;
 }
+
+:root {
+    font-size: calc(15px + 0.390625vw);
+}
+  

@@ -1,4 +1,4 @@
-import '../../src/styles.css'
+import '../../src/App.css'
 import Image from '../components/images/Testamur.jpg'
 import TextAnitmationFunction from './functions/TextAnimationFunction';
 import HighlightFunction from './functions/HighlightFunction'

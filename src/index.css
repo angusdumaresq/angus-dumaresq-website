@@ -13,9 +13,5 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace, 'Roboto', sans-serif;;
-}
-
-:root {
-  font-size: calc(15px + 0.390625vw);
+    monospace, 'Roboto', sans-serif;
 }

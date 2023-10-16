@@ -1,4 +1,4 @@
-import '../../src/styles.css'
+import '../../src/App.css'
 import { useState, useEffect } from 'react'
 import githubSVG from '../components/images/githubSVG.svg'
 import linkedInSVG from '../components/images/linkedInSVG.svg'

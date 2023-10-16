@@ -1,4 +1,4 @@
-import '../../src/styles.css'
+import '../../src/App.css'
 import Image from '../components/images/Character_2_Standing.png'
 import React, { useEffect, useRef } from 'react'
 import HighlightFunction from './functions/HighlightFunction'
